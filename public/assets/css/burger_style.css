@@ -1,0 +1,105 @@
+body {
+    background: red;
+}
+
+#bodyContainer {
+    background: yellow;
+    margin: 50px;
+    width: auto;
+}
+
+.jumbotron {
+    margin: 40px 20px 40px 20px;
+    background: green;
+}
+
+#img {
+    display: block;
+    margin: auto;
+    width: 340px;
+}
+
+#burgerName {
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+h1 {
+    color: white !important;
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 5px;
+}
+
+#burgerName {
+    font-size: 22px;
+}
+
+#ca {
+    width: 400px;
+    padding: 0 10px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+#output {
+    display: inline-block;
+    width: 100%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#addForm {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#submitBtn {
+    background: red;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+}
+
+#ready {
+    float: left;
+    width: 40%;
+}
+
+#devourBtn {
+    float: left;
+    margin-top: 9px;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+}
+
+#eaten {
+    float: right;
+    width: 40%;
+    margin-right: 40px;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+li {
+    text-align: left;
+    list-style: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 0 10px;
+    font-size: 20px;
+    background: white;
+    width: 80%;
+    float: left;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: center;
+}

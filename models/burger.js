@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
   var Sqlburgers = sequelize.define('Sqlburgers', {
-    burgers: {
+    burger: {
       type: DataTypes.STRING,
       notNull: true
     },

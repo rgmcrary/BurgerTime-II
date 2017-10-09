@@ -29,6 +29,17 @@ module.exports = function(app) {
     });
   });
 
+// Returns landing page 
+app.get("/", function(req, res) {
+  db.Sqlburgers.findAll({}).then(function(dbSqlburgers) {
+    var hbsObject = {
+      burgers: dbSqlburgers
+    };
+    //console.log(dbSqlburgers);
+    res.render("index", hbsObject);
+  });
+});
+
   // POST route for saving a new burger
   app.post('/api/burger', function(req, res) {
     console.log(req.body);
@@ -46,33 +57,19 @@ module.exports = function(app) {
       });
   });
 
-  // DELETE route for deleting sqlburgers. We can get the id of the burger we want to delete from
-  // req.params.id
-  // app.delete('/api/burger/:id', function(req, res) {
-  //   db.Sqlburgers
-  //     .destroy({
-  //       where: {
-  //         id: req.params.id
-  //       }
-  //     })
-  //     .then(function(dbSqlburgers) {
-  //       res.json(dbSqlburgers);
-  //     });
-  // });
-
   // PUT route for updating sqlburgers. We can get the updated burger from req.body
-  app.put('/api/burger', function(req, res) {
+  app.put('/api/burger/:id', function(req, res) {
     console.log(req.body);
     db.Sqlburgers
       .update(
         {
           burger: req.body.burger,
-          devoured: req.body.devoured,
-          devourer: req.body.dervourer
+          devoured: true,
+          devourer: req.body.devourer
         },
         {
           where: {
-            id: req.body.id
+            id: req.params.id
           }
         }
       )

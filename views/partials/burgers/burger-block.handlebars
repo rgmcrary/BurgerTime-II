@@ -1,6 +1,6 @@
 
 <li>
-    {{math @index "+" 1}}: {{upcase burger}} 
+    {{math @index "+" 1}}: {{upcase dataValues.burger}} 
 </li>
 {{#if devour}}
-    <button class="change-devoured btn btn-success" id="devourBtn" data-id="{{id}}">Enjoy!</button> {{/if}}
+    <button class="change-devoured btn btn-success" id="devourBtn" data-id="{{dataValues.id}}">Enjoy!</button> {{/if}}

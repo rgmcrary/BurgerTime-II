@@ -4,7 +4,7 @@
     <h2>Burgers ready to eat!</h2>
 
     <ul>
-       {{#each burgers}} {{#unless devoured}} {{> burgers/burger-block devour=true}} {{/unless}} {{/each}}
+       {{#each burgers}} {{#unless dataValues.devoured}} {{> burgers/burger-block devour=true}} {{/unless}} {{/each}}
     </ul>
   </div>
 
@@ -12,7 +12,7 @@
     <h2>Eaten burgers!</h2>
 
     <ul>
-      {{#each burgers}} {{#if devoured}} {{> burgers/burger-block devour=false}} {{/if}} {{/each}}
+      {{#each burgers}} {{#if dataValues.devoured}} {{> burgers/burger-block devour=false}} {{/if}} {{/each}}
     </ul>
   </div>
 

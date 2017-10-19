@@ -8,7 +8,7 @@ Each burger in the waiting area also has a Devour it! button. When the user clic
 
 The app will stores every burger in a database, whether devoured or not.
 
-This is a modified version of the BurgerTime application using sequelize
+This is a modified version of the BurgerTime application using Sequelize.
 
 
 ## Technologies Used

@@ -10,10 +10,6 @@ The app will stores every burger in a database, whether devoured or not.
 
 This is a modified version of the BurgerTime application using Sequelize.
 
-### Installing
-
-npm install
-
 
 ## Built With
 
@@ -26,6 +22,11 @@ npm install
 * JavaScript libraries
 * Node.js
 * Sequelize
+
+
+## Installing
+
+npm install
 
 
 ## Deployment

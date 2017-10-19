@@ -1,4 +1,4 @@
-Eat-Da-Burger II
+# Eat-Da-Burger II
 
 Eat-Da-Burger II is a restaurant app that lets users input the names of burgers they'd like to eat.
 
@@ -10,4 +10,12 @@ The app will stores every burger in a database, whether devoured or not.
 
 This is a modified version of the BurgerTime application using sequelize
 
-This application utilizes HTML5, CSS, JavaScript, Handlebars, Sequelize and is deployed on Heroku.
+
+## Technologies Used
+- HTML5
+- CSS
+- JavaScript
+- JavaScript libraries
+- Handlebars
+- Sequelize
+- Heroku.
